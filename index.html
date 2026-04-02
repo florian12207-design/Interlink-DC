@@ -1,45 +1,33 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <link rel="manifest" href="/Interlink-DC/manifest.json">
-<meta name="theme-color" content="#5865F2">
-<link rel="apple-touch-icon" href="/Interlink-DC/icon-192.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord öffnen</title>
-</head>
+  <title>Interlink DC</title>
+
+  <link rel="manifest" href="/Interlink-DC/manifest.json">
   <meta name="theme-color" content="#5865F2">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 60px 20px;
-      background: #f2f3f5;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    button {
-      background: #5865F2;
-      color: white;
-      border: none;
-      padding: 16px 24px;
-      font-size: 18px;
-      border-radius: 12px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="apple-touch-icon" href="/Interlink-DC/icon-192.png">
 </head>
-<body>
 
-  <h1>Discord öffnen</h1>
-  <button onclick="openDiscord()">Zum Server</button>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+
+  <h1>Interlink DC</h1>
+  <p>Du wirst weitergeleitet...</p>
+
+  <button onclick="openDiscord()" style="padding:15px; font-size:18px;">
+    Falls nichts passiert → klicken
+  </button>
 
   <script>
     function openDiscord() {
       window.location.href = "https://discord.com/channels/1407810110008590407/1407810110591340609";
     }
+
+    // kleine Verzögerung für Stabilität
+    setTimeout(function() {
+      openDiscord();
+    }, 1200);
   </script>
 
 </body>
